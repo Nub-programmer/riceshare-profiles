@@ -1,0 +1,35 @@
+name: "Neon i3"
+id: "neon-i3"
+author: "AxonInnova"
+description: "Minimal i3 rice with kitty and rofi"
+
+supported_distros:
+  - ubuntu
+  - arch
+  - fedora
+
+packages:
+  apt:
+    - i3-wm
+    - kitty
+    - rofi
+    - feh
+    - picom
+
+  pacman:
+    - i3-wm
+    - kitty
+    - rofi
+    - feh
+    - picom
+
+  dnf:
+    - i3
+    - kitty
+    - rofi
+    - feh
+    - picom
+
+files:
+  - src: "dotfiles/i3/config"
+    dest: "~/.config/i3/config"
